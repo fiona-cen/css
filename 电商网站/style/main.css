@@ -1,0 +1,319 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*公用*/
+
+.comWidth{
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.leftArea{
+	float: left;
+}
+.rightArea{
+	float: right;
+}
+.fl{
+float: left;}
+.fr{
+float:right;}
+
+/*topBar*/
+.topBar{
+	height: 31px;
+	background-color:E7E7E7;
+	line-height: 31px;
+}
+.collection{
+	background: url(../images/icon/collection.gif) left center no-repeat;
+	padding-left: 19px;
+	font-weight: bold;
+}
+.topBar a:hover{
+	color:red;
+}
+
+/*logo*/
+.logoBar{
+	height:85px ;
+	background-color:#1D7AD9 ;
+}
+.logo{
+	float: left;
+	padding-left:41px ;
+	padding-top: 13px;
+}
+.search_box{
+	float: left;
+	width: 430px;
+	padding-top: 23px;
+	padding-left: 185px;
+
+}
+.search_text{
+	width: 350px;
+	height: 35px;
+	float: left;
+	padding: 0 5px 0 5px;
+	background-color: white;
+	line-height: 35px\9/*代表所有的IE浏览器*/;
+}
+.search_btn{
+	width: 70px;
+	height: 35px;
+	font-size: 14px;
+	background-color: #ff8C00;
+
+	float: left;
+	font-family: "微软雅黑";
+	color:white;
+}
+
+
+/*shopCar*/
+.shopCar{
+	width: 145px;
+	height: 35px;
+	float: left;
+	margin-left: 31px;
+	margin-top: 23px;
+	background-color: #ff8C00;
+	display: inline;
+	font: 14px/35px  "Microsoft YaHei","微软雅黑";
+	color: #fff;
+}
+.shopText{
+	height: 100%;
+	width: 87px;
+	border-right: 1px solid #E27A00; 
+	background:url(../images/shopCar.jpg) no-repeat 10px center;
+	text-indent: 40px;
+	float: left;
+	/*text-align: center;*/
+}
+.shopNum{
+	border-left: 1px solid #FF9C01;
+	float: left;
+	width: 56px;
+	text-indent: 19px;
+	background: url(../images/shopCar_Arrow.gif) no-repeat 32px center;	
+}
+/*navBox*/
+.navBox{
+	height: 35px;
+	background-color: #1369C0;
+	color: #FFF;
+}
+
+.shopClass{
+	/*font: 14px/35px  "Microsoft YaHei","微软雅黑";/*line-height35px会留下后患*/
+	/*line-height: 35px;有后患 需在.shopClass h3中设置line-hight*/
+	width: 190px;
+	position: relative;/*为什么需要相对定位*/
+	/*text-align: center;*/
+	background: url(../images/arrow.jpg) no-repeat 148px 14px ;
+}
+.shopClass h3{
+	line-height: 35px;
+	text-indent: 39px;
+}
+.nav,.shopClass{
+		font-family:  "Microsoft YaHei","微软雅黑";
+}
+.nav{
+	line-height: 35px;
+}
+.nav li{
+	float: left;
+}
+.nav a{
+	height: 35px;
+	display: inline-block;
+	padding: 0 35px;
+	color: #FFF;
+}
+.nav .active{
+	background-color:#4593FD; 
+}
+/*商品彈出列表*/
+.shopClass_show{
+	background: #4593FD;
+	position: absolute;/*shopClass使用相对定位*/
+	width: 100%;/*需要给出宽度，否则宽度不正确显示*/
+	top: 35px;
+	left: 0;
+}
+.shopClass_item{
+	padding: 14px 10px;
+	border-top: 1px solid #5AA1FE;
+	border-bottom: 1px solid #3487F2;
+}
+.shopClass_item dt{
+	height: 22px;
+	/*line-height: 1;*/
+	/*overflow: hidden;*/
+	background: url(../images/shop_sj.png) no-repeat right center;
+}
+.shopClass_item .b{
+/*	font-weight: bold;
+	font-size: 14px;
+	font-family: "Microsoft YaHei","微軟雅黑";
+*/
+	/*font-weight: bold;*/
+	font: 14px/1 "Microsoft YaHei","微軟雅黑";
+}
+.shopClass_item a{
+color: #FFF;
+margin-right: 5px;/*自己加的 为了让字间距增大*/
+/*padding-bttom:12px; */
+}
+
+
+.shopClass_item .aLink{
+	width: 46px;
+	height:18px;
+	background: #106AC0;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	display: inline-block;
+	text-align: center;/*文字左右对齐*/
+	line-height: 18px;/*与height：20px结合达到文字居中对齐效果*/
+	text-decoration: underline;
+	/*background: url(../images/alink_bg.png) left center no-repeat; */
+}
+/*banner部分*/
+
+.banner_bar{
+	overflow: hidden;/*第二章banner可以隐藏*/
+	position: relative;/*为了让三张banner能够左右移动*/
+}
+.banner_large{
+	width: 810px;/*一张banner的宽度*/
+	height: 326px;
+	/*float: right;*/
+}
+.banner_small{
+	width: 190px;
+	height: 400px;
+}
+.imgBox_large{
+	width: 1620px;/*为了容纳下两张banner*/
+	height: 326px;
+}
+.imgBox_small{
+	width: 380px;/*为了容纳下两张banner*/
+	height: 400px;
+}
+.imgBox{
+	position: absolute;/*为了让三张banner能够左右移动*/
+	left: 0;/*为了让三张banner能够左右移动*/
+	top:0;/*为了让三张banner能够左右移动*/
+}
+.imgBox li{
+	float: left;
+}
+.imgBox_large img{
+	width: 810px;/*要是img标签没有宽高的话，会撑破吧*/
+	height: 326px;
+	display: block;/*解决img下几像素的空白问题*/
+	/*vertical-align: middle;也可以达到解决img几像素空白的问题*/
+}
+.imgBox_small img{
+	width: 190px;/*要是img标签没有宽高的话，会撑破吧*/
+	height: 400px;
+	display: block;/*解决img下几像素的空白问题*/
+	/*vertical-align: middle;也可以达到解决img几像素空白的问题*/
+}
+.imgNum{
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+.imgNum a{
+	width: 20px;
+	height: 5px;
+	overflow: hidden;/*为什么呢*/
+	background-color: #fff;
+	display: inline-block;
+	float: left;
+	margin:0 3px;
+}
+.imgNum .active{
+	background-color: #ff7700;
+}
+/*商品标题*/
+.shopTit{
+	margin-top: 10px;
+	height: 44px;
+	line-height: 44px;
+	font-family: "Microsoft","微软雅黑";
+	margin-bottom: 15px;
+}
+.icon{
+	width: 44px;
+	height: 44px;
+	float: left;
+	background: url(../images/icon/shopIcon.gif);
+}
+.shopTit h3{
+	font-size: 24px;
+	font-weight: normal;
+	padding-left: 14px;
+	float: left;
+}
+.more{
+	float: right;
+	font-family: "宋体";
+}
+.more a:hover{
+text-decoration: underline;
+}
+.shopItem{
+	width: 810px;
+	height: 397px;
+	border-bottom: 3px solid #FF7201;
+	border-top: 1px solid #CCCCCC;  
+	font-family:"Microsoft YaHei","微软雅黑";  
+	font-weight: normal;
+}
+.itemList{
+	width: 199px;
+	height: 397px;
+	border-right:1px solid #CCCCCC;
+	/*background-color: red;*/
+}
+.itemTop{
+	height: 279px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+}
+.itemTop img{
+	padding-left: 15px;
+	padding-top: 45px;
+	display: block;
+}
+.itemList h3{
+	padding-left: 18px;
+	padding-top: 25px;
+	font-size: 16px;
+	color:#000;
+}
+.itemList h4{
+	padding-left: 55px;
+	padding-top: 13px;
+	font-size: 14px;
+	color:#FF7300;
+}
+.itemBottom{
+	height: 116px;
+}
+.itemBottom img{
+	margin-top: 27px;
+	margin-left: 15px;
+	height: 60px;
+	width: 178px;
+	display: block;
+}

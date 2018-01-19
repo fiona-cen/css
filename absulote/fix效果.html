@@ -1,0 +1,68 @@
+<!doctype>
+<html>
+	<head>
+		<style type="text/css">
+			#img2{
+			/* position: absolute; */
+			}
+			.heade{
+			width: 800px;
+			height: 20px;
+			border:1px solid black;
+			}
+			.left{
+			width: 200px;
+			height: 800px;
+			border:1px solid black;
+			}
+				.bod{
+			width: 800px;
+			height: 100%;
+			border:1px solid green;
+			position: relative;
+			}
+			.main{
+			width: 600px;
+			position: absolute;
+			overflow: auto;
+			top: 20px;
+			bottom: 20px;
+			left: 200px;
+			border:1px solid red;
+			}
+			.right-fixed{
+				position: fixed;
+			}
+			.right-fixed-x{
+				text-align: right;
+				overflow: hidden;
+			}
+
+		</style>
+	</head>
+	<body>
+	<div class="bod">
+		<div class="right-fixed-x">
+			&nbsp;<img class="right-fixed" src="images/2.jpg">
+		</div>
+		<div class="heade"></div>
+		<div class="left"></div>
+		<div class="main">
+		
+			<img src="images/2.jpg" />
+			<img id="img2"src="images/0.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/2.jpg" />
+			<img id="img2"src="images/0.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/2.jpg" />
+			<img id="img2"src="images/0.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/2.jpg" />
+			<img id="img2"src="images/0.jpg" />
+			<img src="images/3.jpg" />
+			
+		</div>
+	</div>
+	</body>
+</html>

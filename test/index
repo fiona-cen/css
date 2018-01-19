@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+	<div class="banner"></div>
+	<div class="shopping-hot">I am really hot man</div>
+	<div class="shopping-man">oh yeah
+		<img src="5.jpg">
+	</div>
+	<div class="shopping-lady">come on my lady</div>
+	<div class="shopping-kids">do you like baby</div>
+</div>
+<div class="footer"></div>
+
+<div class="mask"></div>
+<div class="login">
+	<a href="#logon" class="button">登录</a>
+	<a href="#register" class="button">注册</a>
+	<div class="divide-line"></div>
+	<input type="text" class="account">
+	<input type="password" name="" class="account">
+	<input type="checkbox" name="">
+	<span>下次自动登录</span>
+	<span class="fr">忘记密码</span>
+	<input type="button" name="登录" class="notshow">
+	<lable href="#login" class="submit-login">登录</lable>
+	<span>其他方式登录<i class="oth-login"></i></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.public-container{
+	margin:0 auto;
+	width: 960px;
+}
+.index-header{
+
+}
+.header-logo{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url("../images/35.jpg");
+}
+.header-nav{
+float: right;
+border:1px solid green;
+
+}
+.header-nav .item{
+	display: inline-block;
+	border:1px solid red;
+	height: 100%;
+}

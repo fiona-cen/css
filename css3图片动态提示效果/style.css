@@ -1,0 +1,93 @@
+body,p,h1,h2,h3,h4,h5,h6,a,img,figure,figcaption{
+	margin: 0;
+	padding: 0
+}
+figure{
+	float: left;
+	width: 33.33%;
+	height: 200px;
+	overflow: hidden;
+	background: #000;
+	position: relative;
+}
+figcaption{
+	position: absolute;/*无定位值的绝对定位元素没有宽度的，所以设置宽和高都是白搭啊嘤嘤嘤*/
+	color: white;
+	font-family: "微软雅黑";
+	width: 100%;
+	height: 100%;
+} 
+img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	opacity: 0.6;
+}
+
+figure figcaption img,div,h2,p{
+	-webkit-transition:all 1s;
+}
+/* 当浏览器宽度》=1001，figure显示3张图片*/
+@media screen and (min-width: 1001px){
+	figure{
+	width: 33.33%;
+	}
+}
+/* 当浏览器宽度介于600到1000，figure显示2张图片*/
+@media screen and (max-width: 1000px) and (min-width: 601px){
+	figure{
+	width: 50%;
+	}
+}
+/* 当浏览器宽度小于600像素时，figure显示1张图片*/
+@media screen and (max-width: 600px){
+	figure{
+	width: 100%;
+	}
+}
+
+/*第二个图片 */
+
+/* 旋转效果 */
+
+.test2 div{
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top:10%;
+	left:10%;
+	border:1px solid #FFF;
+	-webkit-transform:translate(0,-800px) rotate(0);
+}
+.test2:hover img{
+	opacity: 1;
+}
+.test2:hover div{
+	-webkit-transform:translate(0,0) rotate(360deg);
+}
+.test2 figcaption h2{
+	margin-top: 15%;
+	margin-left: 15%;
+}
+.test2 figcaption p{
+	margin-left: 15%;
+}
+
+/* 第三张图片 */
+.test3 figcaption{
+	margin:10px;
+}
+
+.test3 figcaption h2{
+	-webkit-transform:scale(1.1,1.1);
+}
+.test3:hover figcaption h2{
+	-webkit-transform:scale(1,1);
+	
+}
+.test3 figcaption p{
+	-webkit-transform:scale(1.1,1.1);
+}
+.test3:hover figcaption p{
+	-webkit-transform:scale(1,1);
+}

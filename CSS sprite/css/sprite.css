@@ -1,0 +1,5 @@
+.sprite{width: 216px}
+.sprite li{width: 216px;height: 42px;line-height: 42px;border-top: solid 1px #c11e08;border-bottom:1px solid #911001;background-color: #b51600;cursor:pointer;}
+.sprite li a{color:#fff;float: left;}
+.sprite .s-icon{width: 24px;height: 40px;background: url("../images/s-icon.png");
+background-position: 0 0;float: left;margin-left: 10px;margin-right: 8px;}

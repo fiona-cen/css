@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+.content{width: 80%}
+.shopping-hot{;background-color: #bad;}
+.shopping-man{height: 1024px;background-color: #abc;}
+.shopping-lady{height: 1024px;background-color: #cad;}
+.sidebar-container{text-align: right;height: 0;overflow: hidden;}
+.sidebar{position: fixed;width: 20%;height: 200px;background-color: #aaa;display: inline-block;}
+img{
+	display: block;
+}
+</style>
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+	<div class="banner"></div>
+	<div class="shopping-hot">
+		<div class="sidebar-container">
+			&nbsp;<div class="sidebar"></div>
+		</div>
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+		<img src="5.jpg">
+	</div>
+	<div class="shopping-man"></div>
+	<div class="shopping-lady"></div>
+	<div class="shopping-kids"></div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
